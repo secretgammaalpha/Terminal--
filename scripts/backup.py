@@ -4,7 +4,7 @@ import time
 import json
 class backup():
     def LoadFileName():
-        #script_dir = os.path.dirname(os.path.abspath(__file__))
+        script_dir = os.path.dirname(os.path.abspath(__file__))
         settings_path = os.path.join(script_dir, 'Settings.json')
         with open(settings_path,"r") as set:
             content = json.load(set)
