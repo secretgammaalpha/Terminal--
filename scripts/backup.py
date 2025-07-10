@@ -8,8 +8,8 @@ class backup():
             content = json.load(set)
         global filename
         global Install_Dir
-        Install_Dir = content["Directory_PATH"]["INSTALL_DIR"]
-        filename = content["SSF"]["file name"]
+        Install_Dir = content["Settings"]["INSTALL_DIR"]
+        filename = content["Settings"]["file_name"]
     def decompress():
         os.rename(f'{Install_Dir}/Terminal---2.01/{filename}.docx',f'{Install_Dir}/Terminal---2.01/{filename}.zip')
         time.sleep(3)
