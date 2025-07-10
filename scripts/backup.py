@@ -4,7 +4,7 @@ import time
 import json
 class backup():
     def LoadFileName():
-        with open('scripts/Settings.json',"r") as set:
+        with open('Settings.json',"r") as set:
             content = json.load(set)
         global filename
         global Install_Dir
